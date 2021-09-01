@@ -1,9 +1,9 @@
 .header {
   height: 6%;
-  width: 100%;
-  display: flex;
+  flex-shrink: 0;
+  display: inline-flex;
   justify-content: space-between;
-
+  border-radius: 0px 0px 5px 5px;
   background-color: #0e0e10;
 }
 
@@ -47,8 +47,20 @@
   justify-content: space-between;
   margin-right: 10px;
 }
-a {
+
+.lives,
+.videosButton,
+.notif {
   margin: 10px;
+
+  font-size: large;
+  font-weight: bold;
+}
+
+.lives:hover,
+.notif:hover,
+.videosButton:hover {
+  color: rgba(194, 4, 219, 0.644);
 }
 .searchButton:hover {
   border: 1px solid rgba(2, 187, 211, 0.459);
