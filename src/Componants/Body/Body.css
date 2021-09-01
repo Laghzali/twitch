@@ -32,6 +32,9 @@
   background-color: rgba(74, 4, 83, 0.486);
 }
 
+.cardActive div {
+  background-color: rgba(74, 4, 83, 0.486);
+}
 .card i {
   color: lightblue;
   padding-left: 10px;

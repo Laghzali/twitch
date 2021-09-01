@@ -1,12 +1,16 @@
 import './Header.css'
-
+import {NavLink } from 'react-router-dom'
 const Header  = () =>  {
     return <div className='header'>
         <div className='leftbar'>
             <img className='logo' src='https://pngimg.com/uploads/twitch/twitch_PNG56.png' ></img>
-             <span className='lives'>Lives</span>
+            <NavLink style={{'text-decoration' : 'none' , 'color':'white'}} activeClassName="NavActive" to='/lives'>
+                <span className='lives'>Lives</span>
+            </NavLink >
+            <NavLink style={{'text-decoration' : 'none' , 'color':'white'}} activeClassName="NavActive" to='/videos'>
             <span className='videosButton'>Videos</span>
-            </div>
+            </NavLink >
+        </div>
         <div className='search'>
             <input className='searchField' type='text' nam='search' placeholder='search for content'></input>
             <button className='searchButton' ><i class="fas fa-search"></i></button>
